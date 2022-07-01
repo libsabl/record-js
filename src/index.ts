@@ -3,3 +3,4 @@
 // license that can be found in the LICENSE file.
 
 export { isDefault, initScalar } from './initter';
+export { RecordError, RecordErrorOptions } from './error';
