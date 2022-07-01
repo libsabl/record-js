@@ -131,18 +131,16 @@ A key feature of the record pattern is to explicitly communicate and enforce whe
 
 - `generated` / `read-only` 
 
-  These attributes are derived or set by the external data source. At runtime, they can only be set when calling the `init.load()` method of a record the first time. Therefore the properties on the record are `readonly`.
+  These attributes are derived or set by the external data source. At runtime, they can only be set when calling the `init.load()` method of a record. Therefore the properties on the record are `readonly`.
 
 - `write-once` 
   
-  These attributes are supplied by a client when first creating a record, but they may never be changed afterwards. This is a logical concept that does not exist in any database system but is often important for the correct use of business data. Like `read-only` attributes, at runtime they can only be set when calling the `init.load()` method of a record the first time. Therefore the properties on the record are `readonly`.
+  These attributes are supplied by a client when first creating a record, but they may never be changed afterwards. This is a logical concept that does not exist in any database system but is often important for the correct use of business data. Like `read-only` attributes, at runtime they can only be set when calling the `init.load()` method of a record. Therefore the properties on the record are `readonly`.
 
 - `protected-set` and mutators
 
-  These attributes may be updated, but for semantic or human reasons the author of the data model wants to cause authors of code which use a record to stop and think before modifying them. Thus the properties are `readonly` to prevent simple assignment, but **mutator** methods are provided in order to update the values.
-
-  Some mutator methods 
-  
+  These attributes may be updated, but for semantic or human reasons the author of the data model wants to cause authors of code which use a record to stop and think before modifying the values of the applicable property. This is the programmatic equipment of a flip-up toggle switch cover. Thus the properties are `readonly` to prevent simple assignment, but **mutator** methods are provided in order to update the values.
+ 
   Mutator methods may also be used to maintain correctness between correlated attributes. In the example above, it is implied that setting either `quantity` or `price` will also recalculate the `amount` property.
 
   Mutator methods may contain simple checks on the basic validity of data, but should never include business rules. Appropriate validity checks could include ensuring a string is non-empty or not too long for the intended data store field, or ensuring an integer is a known enumeration value.

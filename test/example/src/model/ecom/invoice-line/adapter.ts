@@ -36,12 +36,15 @@ export class InvoiceLineAdapter {
         if (typeof invoiceSrc === 'number') {
           return super.create(ctx, invoiceSrc, amount, product);
         }
+
+        const invoice = invoiceSrc;
+
         // Create the record
-        const record = await super.create(ctx, invoiceSrc.id, amount, product);
+        const record = await super.create(ctx, invoice.id, amount, product);
 
         // Set the reciprocal relations
-        invoiceSrc.init.lines.appendItem(record);
-        record.init.invoice.initItem(invoiceSrc);
+        invoice.init.lines.appendItem(record);
+        record.init.invoice.initItem(invoice);
 
         // Return the record
         return record;
