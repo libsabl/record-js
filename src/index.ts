@@ -8,3 +8,4 @@ export { Record, RecordOf } from './record';
 export { Relation, NullableRelation } from './relation';
 export { CollectionRelation } from './collection-relation';
 export { stream, collect } from './stream';
+export { Row, Constructor } from './types';
