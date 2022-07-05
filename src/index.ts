@@ -6,3 +6,4 @@ export { isDefault, initScalar } from './initter';
 export { RecordError, RecordErrorOptions } from './error';
 export { Record, RecordOf } from './record';
 export { Relation, NullableRelation } from './relation';
+export { CollectionRelation } from './collection-relation';
