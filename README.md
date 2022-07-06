@@ -4,7 +4,7 @@
 
 # @sabl/record
  
-**record** is a pattern for representing a data model at runtime. It uses record or model instances exclusively to hold the attributes of a single flat row of data and to allow on-record caching of related records. Even with cached relations, records are passive and do not hold a connection to or knowledge of where the record was loaded from.
+**record** is a pattern for representing a data model at runtime. It uses record instances exclusively to hold the attributes of a single flat row of data and to allow on-record caching of related records. Even with cached relations, records are passive and do not hold a connection to or knowledge of where the record was loaded from.
 
 Most aspects of the record pattern are indeed *patterns* that authors implement in their own code bases. This library provides a small collection of common building blocks for implementing the record pattern in TypeScript / JavaScript.
 

@@ -1,6 +1,6 @@
 {
   "name": "@sabl/record",
-  "version": "0.1.0-a02",
+  "version": "0.1.0-a03",
   "description": "Basic elements for implementing the sabl record pattern",
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
