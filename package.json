@@ -1,6 +1,6 @@
 {
   "name": "@sabl/record",
-  "version": "0.1.0-a04",
+  "version": "0.1.0",
   "description": "Basic elements for implementing the sabl record pattern",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

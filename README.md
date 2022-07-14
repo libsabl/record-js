@@ -1,5 +1,6 @@
 <!-- BEGIN:REMOVE_FOR_NPM -->
 [![codecov](https://codecov.io/gh/libsabl/record-js/branch/main/graph/badge.svg?token=TVL1XYSJHA)](https://app.codecov.io/gh/libsabl/record-js/branch/main)
+<span class="badge-npmversion"><a href="https://npmjs.org/package/@sabl/record" title="View this project on NPM"><img src="https://img.shields.io/npm/v/@sabl/record.svg" alt="NPM version" /></a></span>
 <!-- END:REMOVE_FOR_NPM -->
 
 # @sabl/record
